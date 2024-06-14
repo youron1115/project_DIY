@@ -1,0 +1,16 @@
+[ 2024-06-14 12:04:31,980 ] 29 root - INFO - Numerical data preprocessing: 
+[ 2024-06-14 12:04:31,985 ] 34 root - INFO - Categorical data preprocessing 
+[ 2024-06-14 12:04:31,988 ] 14 root - INFO - Data split :
+Data column : Index(['rate', 'income_per_month', 'subject_CS', 'subject_EE(Electrical )',
+       'subject_EE(Electronic)', 'subject_ME'],
+      dtype='object')
+Test size : 0.3
+[ 2024-06-14 12:04:31,991 ] 19 root - INFO - Data split done
+[ 2024-06-14 12:04:31,991 ] 14 root - INFO - Data split :
+Data column : Index(['rate', 'income_per_month', 'subject_CS', 'subject_EE(Electrical )',
+       'subject_EE(Electronic)', 'subject_ME'],
+      dtype='object')
+Test size : 0.2
+[ 2024-06-14 12:04:31,994 ] 19 root - INFO - Data split done
+[ 2024-06-14 12:04:32,006 ] 61 root - INFO - model evaluate success:1.0
+[ 2024-06-14 12:04:32,011 ] 62 root - INFO - model test success:1.0

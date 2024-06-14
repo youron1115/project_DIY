@@ -23,5 +23,5 @@ logging.basicConfig(
     filename=logs_path,
     format="[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",
     #紀錄時間,行數,名稱,等級,訊息
-    level=logging.DEBUG,
+    level=logging.INFO,
 )
