@@ -36,30 +36,15 @@ try:
     X_train,X_test,y_train,y_test=split_1.split()
     
     split_2=data_process.data_split_and_output(X_train,y_train)
-    X_train,X_valid,y_train,y_valid=split_2.split()
-    
-    #y_train_path=r"D:\project_DIY\artifact\y_train.csv"
-    #y_test_path=r"D:\project_DIY\artifact\y_test.csv"
-    
-    #y_train.to_csv(y_train_path,index=False)
-    #y_test.to_csv(y_test_path,index=False)
-    
-    
-    #y_train=pd.read_csv(r"D:\project_DIY\src\component\data\y_train.csv")
-    #y_test=pd.read_csv(r"D:\project_DIY\src\component\data\y_test.csv")
-    
+    X_train,X_valid,y_train,y_valid=split_2.split()    
     
     c=model_train.choose_model(X_train, y_train, X_valid, y_valid)
-    name,dicts=c.train_model()
+    name,model=c.train_model()#回傳模型名,模型
+    c.save_model(model,name)#保存模型
     
-    DT=DecisionTreeClassifier(random_state=0)
-    
-    DT.fit(X_train,y_train)
-    
-    pred=DT.predict(X_test)
-    #print("pred:",pred)
-    logging.info("model evaluate success:{}".format(DT.score(X_valid,y_valid)))
-    logging.info("model test success:{}".format(DT.score(X_test,y_test)))
+    logging.info("model:{}".format(model))
+    logging.info("model valid success:{}".format(model.score(X_valid,y_valid)))
+    logging.info("model test success:{}".format(model.score(X_test,y_test)))
 
 except Exception as e:
     raise CustomException(e,sys.exc_info())

@@ -1,0 +1,37 @@
+[ 2024-06-15 14:27:23,273 ] 29 root - INFO - Numerical data preprocessing: 
+[ 2024-06-15 14:27:23,275 ] 34 root - INFO - Categorical data preprocessing 
+[ 2024-06-15 14:27:23,277 ] 14 root - INFO - Data split :
+Data column : Index(['rate', 'income_per_month', 'subject_CS', 'subject_EE(Electrical )',
+       'subject_EE(Electronic)', 'subject_ME'],
+      dtype='object')
+Test size : 0.3
+[ 2024-06-15 14:27:23,278 ] 19 root - INFO - Data split done
+[ 2024-06-15 14:27:23,278 ] 14 root - INFO - Data split :
+Data column : Index(['rate', 'income_per_month', 'subject_CS', 'subject_EE(Electrical )',
+       'subject_EE(Electronic)', 'subject_ME'],
+      dtype='object')
+Test size : 0.2
+[ 2024-06-15 14:27:23,279 ] 19 root - INFO - Data split done
+[ 2024-06-15 14:27:23,280 ] 95 root - INFO - Model training list started
+
+[ 2024-06-15 14:27:23,280 ] 98 root - INFO - Model name : Random Forest classifier
+[ 2024-06-15 14:27:23,281 ] 30 root - INFO - Model building started for model : RandomForestClassifier()
+[ 2024-06-15 14:27:23,366 ] 36 root - INFO - Model fitting done
+[ 2024-06-15 14:27:23,366 ] 53 root - INFO - Model evaluation returned
+[ 2024-06-15 14:27:23,372 ] 107 root - INFO - Model score : 0.6666666666666666
+
+[ 2024-06-15 14:27:23,372 ] 98 root - INFO - Model name : Decision Tree
+[ 2024-06-15 14:27:23,372 ] 30 root - INFO - Model building started for model : DecisionTreeClassifier()
+[ 2024-06-15 14:27:23,373 ] 36 root - INFO - Model fitting done
+[ 2024-06-15 14:27:23,374 ] 53 root - INFO - Model evaluation returned
+[ 2024-06-15 14:27:23,375 ] 107 root - INFO - Model score : 1.0
+
+[ 2024-06-15 14:27:23,375 ] 109 root - INFO - Model training list done
+score:{'Random Forest classifier': 0.6666666666666666, 'Decision Tree': 1.0}
+[ 2024-06-15 14:27:23,376 ] 117 root - INFO - choose model :DecisionTreeClassifier()
+[ 2024-06-15 14:27:23,376 ] 119 root - INFO - Model training done
+
+[ 2024-06-15 14:27:23,376 ] 20 root - ERROR - 
+Error occured in python script name: D:\project_DIY\predict.py
+line number: 43
+error message: choose_model.save_model() missing 1 required positional argument: 'model_name'

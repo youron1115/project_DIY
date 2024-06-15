@@ -9,3 +9,5 @@
 - 3.1建立__init__.py
 - 3.2建立data_preprocess.py(split_data->set num_col and cat_col->preprocess)
 - 3.3建立model_train.py(train_model class->choose_model(model list->model->record score->choose best model)->save model)
+- 3.4建立model dir存放model
+- 4.建立predict dir存放預測的程式

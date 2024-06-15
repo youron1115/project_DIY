@@ -1,0 +1,38 @@
+[ 2024-06-15 14:28:20,198 ] 29 root - INFO - Numerical data preprocessing: 
+[ 2024-06-15 14:28:20,200 ] 34 root - INFO - Categorical data preprocessing 
+[ 2024-06-15 14:28:20,201 ] 14 root - INFO - Data split :
+Data column : Index(['rate', 'income_per_month', 'subject_CS', 'subject_EE(Electrical )',
+       'subject_EE(Electronic)', 'subject_ME'],
+      dtype='object')
+Test size : 0.3
+[ 2024-06-15 14:28:20,202 ] 19 root - INFO - Data split done
+[ 2024-06-15 14:28:20,202 ] 14 root - INFO - Data split :
+Data column : Index(['rate', 'income_per_month', 'subject_CS', 'subject_EE(Electrical )',
+       'subject_EE(Electronic)', 'subject_ME'],
+      dtype='object')
+Test size : 0.2
+[ 2024-06-15 14:28:20,203 ] 19 root - INFO - Data split done
+[ 2024-06-15 14:28:20,206 ] 95 root - INFO - Model training list started
+
+[ 2024-06-15 14:28:20,206 ] 98 root - INFO - Model name : Random Forest classifier
+[ 2024-06-15 14:28:20,207 ] 30 root - INFO - Model building started for model : RandomForestClassifier()
+[ 2024-06-15 14:28:20,276 ] 36 root - INFO - Model fitting done
+[ 2024-06-15 14:28:20,276 ] 53 root - INFO - Model evaluation returned
+[ 2024-06-15 14:28:20,281 ] 107 root - INFO - Model score : 0.6666666666666666
+
+[ 2024-06-15 14:28:20,281 ] 98 root - INFO - Model name : Decision Tree
+[ 2024-06-15 14:28:20,281 ] 30 root - INFO - Model building started for model : DecisionTreeClassifier()
+[ 2024-06-15 14:28:20,283 ] 36 root - INFO - Model fitting done
+[ 2024-06-15 14:28:20,283 ] 53 root - INFO - Model evaluation returned
+[ 2024-06-15 14:28:20,284 ] 107 root - INFO - Model score : 1.0
+
+[ 2024-06-15 14:28:20,284 ] 109 root - INFO - Model training list done
+score:{'Random Forest classifier': 0.6666666666666666, 'Decision Tree': 1.0}
+[ 2024-06-15 14:28:20,284 ] 117 root - INFO - choose model :DecisionTreeClassifier()
+[ 2024-06-15 14:28:20,284 ] 119 root - INFO - Model training done
+
+[ 2024-06-15 14:28:20,286 ] 87 root - INFO - Model saved : D:/project_DIY/model/Decision Tree.joblib
+
+[ 2024-06-15 14:28:20,286 ] 45 root - INFO - model :DecisionTreeClassifier()
+[ 2024-06-15 14:28:20,288 ] 46 root - INFO - model valid success:1.0
+[ 2024-06-15 14:28:20,289 ] 47 root - INFO - model test success:1.0

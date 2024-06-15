@@ -1,4 +1,0 @@
-[ 2024-06-14 12:01:10,891 ] 20 root - ERROR - 
-Error occured in python script name: D:\project_DIY\predict.py
-line number: 39
-error message: Shape of passed values is (20, 1), indices imply (20, 4)
